@@ -5,8 +5,8 @@ https://huggingface.co/docs/hub/security-tokens
 
 ```python
 from transformers import AutoModel
-access_token = "hf_..."
-model = AutoModel.from_pretrained("private/model", token=access_token)
+access_token = ...
+model = AutoModel.from_pretrained("NAME_OF_HUGGINFACETHING/NAME_OF_MODEL", token=access_token)
 ```
 
 # Use environment variable
