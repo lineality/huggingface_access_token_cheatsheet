@@ -57,9 +57,11 @@ etc.
 
 # Method 2: Using 'from huggingface_hub import login'
 ```python
+# get your value from whatever environment-variable config system (e.g. python dot-env, or yaml, or toml)
 from google.colab import userdata
 hugging_face_auth_access_token = userdata.get('hugging_face_auth')
 
+# put that auth-value into the huggingface login function
 from huggingface_hub import login
 login(token=hugging_face_auth_access_token)
 ```
