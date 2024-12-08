@@ -24,6 +24,7 @@ model = AutoModel.from_pretrained("NAME_OF_HUGGINFACETHING/NAME_OF_MODEL", token
 As a rule of thumb, always, even for local tinkering and R&D, use ~more-secure environment variables
 and do not ever hard-code a key, auth, password, etc., into a file
 
+# Method 1: Adding to 'from_...' line:
 ## Example using google colab:
 ```python
 from google.colab import userdata
@@ -51,7 +52,13 @@ tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", 
 
 etc.
 ```
-
-
 ## Example using .env and python-dotenv
+(pending)
 
+# Method 2: Using 'from huggingface_hub import login'
+```python
+from google.colab import userdata
+hugging_face_auth_access_token = userdata.get('hugging_face_auth')
+login(token=hugging_face_auth_access_token)
+from huggingface_hub import login
+```
