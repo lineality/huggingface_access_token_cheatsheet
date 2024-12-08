@@ -59,6 +59,7 @@ etc.
 ```python
 from google.colab import userdata
 hugging_face_auth_access_token = userdata.get('hugging_face_auth')
-login(token=hugging_face_auth_access_token)
+
 from huggingface_hub import login
+login(token=hugging_face_auth_access_token)
 ```
