@@ -3,7 +3,12 @@
 ## add "token" (auth-token) to BOTH the model AND the tokenizer.
 Otherwise, tokenizer error will be vague and not say that you have to use an auth-token:
 ```error message
-OSError: Can't load tokenizer for 'mistralai/Mistral-7B-Instruct-v0.2'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'mistralai/Mistral-7B-Instruct-v0.2' is the correct path to a directory containing all relevant files for a LlamaTokenizerFast tokenizer.
+OSError: Can't load tokenizer for 'mistralai/Mistral-7B-Instruct-v0.2'.
+If you were trying to load it from 'https://huggingface.co/models',
+make sure you don't have a local directory with the same name.
+Otherwise, make sure 'mistralai/Mistral-7B-Instruct-v0.2' is
+the correct path to a directory containing all relevant files
+for a LlamaTokenizerFast tokenizer.
 ```
 
 see: 
