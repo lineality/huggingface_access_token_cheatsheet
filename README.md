@@ -56,7 +56,7 @@ etc.
 (pending)
 
 # Method 2: Using 'from huggingface_hub import login'
-This may show an error saying a token is not found.
+This may show a 'warning' saying a token is not found.
 ```python
 # get your value from whatever environment-variable config system (e.g. python dot-env, or yaml, or toml)
 from google.colab import userdata
