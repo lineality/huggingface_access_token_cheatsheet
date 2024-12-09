@@ -57,11 +57,11 @@ etc.
 """
 Python Dot-env
 """
-# from dotenv import load_dotenv (pip install python-dotenv)
-# import os
+from dotenv import load_dotenv  # (pip install python-dotenv)
+import os
 
-# load_dotenv()
-# api_key = os.getenv("hugging_face_auth")
+load_dotenv()
+api_key = os.getenv("hugging_face_auth")
 
 ```
 
