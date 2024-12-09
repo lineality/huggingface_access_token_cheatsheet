@@ -53,7 +53,17 @@ tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", 
 etc.
 ```
 ## Example using .env and python-dotenv
-(pending)
+```python
+"""
+Python Dot-env
+"""
+# from dotenv import load_dotenv (pip install python-dotenv)
+# import os
+
+# load_dotenv()
+# api_key = os.getenv("hugging_face_auth")
+
+```
 
 # Method 2: Using 'from huggingface_hub import login'
 This may show a 'warning' saying a token is not found.
