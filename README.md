@@ -53,6 +53,11 @@ tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", 
 etc.
 ```
 ## Example using .env and python-dotenv
+example of .env file:
+```
+my_huggingforce_auth_token="082g0hwg0uhg0hsg2h-832t8-3whgwhe"
+```
+
 ```python
 """
 Python Dot-env
