@@ -55,9 +55,13 @@ etc.
 ## Example using .env and python-dotenv
 example of .env file:
 ```
-my_huggingforce_auth_token="082g0hwg0uhg0hsg2h-832t8-3whgwhe"
+hugging_face_auth="082g0hwg0uhg0hsg2h-832t8-3whgwhe"
 ```
 
+install library with:
+```
+pip install python-dotenv
+```
 ```python
 """
 Python Dot-env
